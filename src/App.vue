@@ -7,5 +7,3 @@ import Cabecera from "@/components/Cabecera.vue"
   <Cabecera />
   <RouterView />
 </template>
-
-
