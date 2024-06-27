@@ -1,9 +1,9 @@
 <template>
     <div class="contenedor">
-        <Titulo  :titulo="props.categoria" />
+        <Titulo :titulo="props.categoria" />
         <div class="productos">
             <div class="producto" v-for="producto in productos" :key="producto.id" >
-               <img class="foto"   :src="`/imagenes/${producto.imagen}`" alt="Producto">
+               <img class="foto" :src="`/imagenes/${producto.imagen}`" alt="Producto">
                <div class="informacion">
                   <h3 class="titulo">
                     {{ producto.producto }}
@@ -35,3 +35,4 @@ watchEffect(() => {
     productos.value = listaProductos.filter((producto) => producto.categoria === props.categoria );
 });
 </script>
+
